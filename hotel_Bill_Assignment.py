@@ -6,7 +6,7 @@ print ("MENU CARD")
 lst_choice = []
 lst_qty = []
 dict_menu = {1:'Naan', 2:'Veg Kadai', 3:'Dose', 4:'Idli'}
-dict_price = {1:10, 2:200, 3:500, 4:20}
+dict_price = {1:10, 2:200, 3:50, 4:20}
 
 while(1):
     print('1: Naan Rs.10/piece \n2: Veg Kadai Rs.200/plate \n3: Dose Rs.50/plate \n4: Idli Rs. 20/serving')
@@ -56,6 +56,7 @@ while(1):
             print(dict_menu[val])
             print('Qty: ', lst_qty[i])
             print('Rs.', dict_price[val], 'per unit')
+            print('Amount. ', lst_qty[i]*dict_price[val])
             print('\n')
             total = total + (dict_price[val] * lst_qty[i])
             
